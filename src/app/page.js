@@ -103,12 +103,13 @@ export default function LoginPage() {
         )}
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Show default credentials note only in login mode */}
           {isLogin && (
             <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-800">
-              <strong>Use these credentials to login:</strong><br />
-              Email: <span className="font-mono">admin@gmail.com</span><br />
-              Password: <span className="font-mono">1234</span>
+              This application uses <strong>XAMPP with MySQL</strong> for local database integration. However, since the app is deployed on <strong>Vercel</strong> (which does not support backend services like XAMPP or a local MySQL server), the login will not fetch credentials from the database.<br /><br />
+              Instead, for demonstration purposes, the login will succeed automatically upon clicking the <strong>Sign In</strong> button using the following static credentials:<br /><br />
+              <span className="font-mono">Email: admin@gmail.com</span><br />
+              <span className="font-mono">Password: 1234</span><br /><br />
+              Thank you for your understanding!
             </div>
           )}
 

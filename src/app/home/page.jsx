@@ -464,6 +464,10 @@ export default function HomePage() {
                     <p className="text-gray-600 mb-6">
                       Upload a PDF, PPT, or Word document and get AI-powered insights and answers to your questions.
                     </p>
+                    <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-800">
+                      <strong>Note:</strong> Ollama needs to be installed locally for this feature to work.<br />
+                      I used Ollama so students can interact with AI even without an internet connection.
+                    </div>
                     
                     <div className="space-y-4">
                       <div>
@@ -558,6 +562,10 @@ export default function HomePage() {
                   <div className="flex flex-col items-center justify-center min-h-[300px]">
                     <h3 className="text-lg font-semibold text-gray-900 mb-4">Speech Assistant</h3>
                     <p className="text-gray-600 mb-6">Click the mic and talk to your AI tutor!</p>
+                    <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm text-blue-800 text-center">
+                      <strong>Note:</strong> Ollama needs to be installed locally for this feature to work.<br />
+                      I used Ollama so students can interact with the AI tutor using voice, even without an internet connection.
+                    </div>
                     <button
                       onClick={async () => {
                         setSpeechResponse("");
